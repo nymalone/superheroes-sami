@@ -5,9 +5,10 @@ import isMatchWith from 'lodash.ismatchwith'
 import Filter from '../../components/Filter'
 import HeroesList from '../../components/HeroesList'
 import Header from '../../components/Header'
-import HeroModal from '../components/HeroModal'
+import HeroModal from '../../components/HeroModal'
 import Spinner from '../../components/Spinner'
-import { fetchAllHeroesList } from '../redux/heroes'
+
+import { fetchAllHeroesList } from '../../redux/heroes'
 import { allLetters, TOTAL_NUMBER_OF_HEROES } from '../../helpers/utils'
 
 import './styles.scss'

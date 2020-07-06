@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, BrowserRouter } from 'react-router-dom'
 
 import Home from './pages/Home'
-import AllHeroes from './pages/heroList/AllHeroes'
+import AllHeroes from './pages/AllHeroes'
 
 const Routes = () => {
   return (

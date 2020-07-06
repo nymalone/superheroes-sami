@@ -1,4 +1,4 @@
-@import '../../../styles/_theme.scss';
+// @import '../../../styles/_theme.scss'
 
 .container {
   min-height: 100vh;
@@ -16,13 +16,13 @@
   }
 }
 
-@media (min-width: $screen-width-md) {
-  .container {
-    display: flex;
-    align-items: center;
-  }
+// @media (min-width: $screen-width-md) {
+//   .container {
+//     display: flex;
+//     align-items: center;
+//   }
 
-  .content {
-    width: $content-width-md;
-  }
-}
+//   .content {
+//     width: $content-width-md;
+//   }
+// }
