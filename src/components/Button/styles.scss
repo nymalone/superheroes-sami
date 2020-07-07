@@ -8,17 +8,14 @@
   font-family: Ubuntu;
   color: $text-color;
   background-color: #fff;
-  border: 1px solid $green-color;
+  border: 1px solid #fff;
   border-radius: $extreme-round;
   outline: none;
   cursor: pointer;
+  margin: 10px 0 3px 10px;
 
   &:hover {
     background-color: $text-color;
     color: #fff;
-  }
-
-  &.modal-close-button {
-    margin: 8px 0px 0px 8px;
   }
 }

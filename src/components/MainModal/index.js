@@ -11,7 +11,7 @@ const MainModal = ({
   onBackdropClick
 }) => (
   <>
-    <div className={`modal-container ${className}`}>
+    <div className='modal-container'>
       <div className='modal-top-bar'>
         <Button
           text='X'
