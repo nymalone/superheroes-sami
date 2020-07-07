@@ -17,7 +17,7 @@ const Filter = ({
         <span className='filterbar-title'>
             Search for a hero name:
         </span>
-        <div className='filter-bar-container'>
+        <div className='filterbar-content'>
           <SearchBar
             filterHeroes={filterHeroes}
             query={query}

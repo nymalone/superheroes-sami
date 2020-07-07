@@ -5,11 +5,10 @@ import './styles.scss'
 
 const Button = ({
   text,
-  onClick,
-  className
+  onClick
 }) => (
   <button
-    className={`token-button ${className}`}
+    className='token-button'
     onClick={onClick}
   >
     {text}
@@ -18,8 +17,7 @@ const Button = ({
 
 Button.propTypes = {
   text: PropTypes.string,
-  onClick: PropTypes.func,
-  className: PropTypes.string
+  onClick: PropTypes.func
 }
 
 export default Button

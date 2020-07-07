@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './styles.scss'
 
 const Header = () => (
   <div className='header'>
-    <span className='header-logo'>SAMI HEROES</span>
+    <Link to="/">
+      <span className='header-logo'>SAMI HEROES</span>
+    </Link>
   </div>
 )
 
