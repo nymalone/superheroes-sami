@@ -19,7 +19,7 @@ const HeroesList = ({
           >
             <Card.Img variant="top" src={el.image.url} alt={el.name} style={{ height: 400, width: 300 }}/>
             <Card.Body>
-              <Card.Title>{el.name}</Card.Title>
+              <Card.Title style={{ fontFamily: 'Ubuntu', fontSize: 20 }}>{el.name}</Card.Title>
             </Card.Body>
           </Card>
         ))}

@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import SearchBar from '../SearchBar'
+import SearchBar from '../../atoms/SearchBar'
 import './styles.scss'
-import Button from '../Button'
+import Button from '../../atoms/Button'
 
 const Filter = ({
   filterHeroes,

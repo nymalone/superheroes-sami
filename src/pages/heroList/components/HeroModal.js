@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 
-import MainModal from '../../molecules/MainModal'
-import Spinner from '../../atoms/Spinner'
-
-import './styles.scss'
+import MainModal from '../../../components/molecules/MainModal'
+import Spinner from '../../../components/atoms/Spinner'
+import './heroModal.scss'
 
 const HeroModal = ({
   hero,

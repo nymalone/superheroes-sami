@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector, shallowEqual } from 'react-redux'
 
-import Filter from '../../components/Filter'
-import HeroesList from '../../components/HeroesList'
-import Header from '../../components/Header'
-import HeroModal from '../../components/HeroModal'
-import Spinner from '../../components/Spinner'
+import Filter from '../../components/molecules/Filter'
+import HeroesList from '../../components/molecules/HeroesList'
+import Header from '../../components/atoms/Header'
+import HeroModal from '../../components/organisms/HeroModal'
+import Spinner from '../../components/atoms/Spinner'
 
 import { fetchAllHeroesList } from '../../redux/heroes'
 import { allLetters, TOTAL_NUMBER_OF_HEROES } from '../../helpers/utils'
