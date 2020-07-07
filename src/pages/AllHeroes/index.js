@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector, shallowEqual } from 'react-redux'
-import isMatchWith from 'lodash.ismatchwith'
 
 import Filter from '../../components/Filter'
 import HeroesList from '../../components/HeroesList'
@@ -20,7 +19,6 @@ function AllHeroes () {
   const missingSeedLetters = useSelector(state => state.heroesReducer.failedFetchingLetters)
 
   const [query, setQuery] = useState('')
-  const [stats, setStats] = useState({})
   const [selectedHero, setSelectedHero] = useState(null)
 
   useEffect(() => {
@@ -46,25 +44,12 @@ function AllHeroes () {
     setSelectedHero(null)
   }
 
-  const setFilterStats = ({ statName, value }) => {
-    setStats(prevState => {
-      return { ...prevState, [statName]: value }
-    })
-  }
-
-  const resetFilterStats = () => {
-    setStats({})
-  }
-
   return (
     <div className='container'>
       <Header />
       <div className='content'>
         <Filter
           filterHeroes={filterHeroes}
-          setFilterStats={setFilterStats}
-          resetFilterStats={resetFilterStats}
-          stats={stats}
           query={query}
           setQuery={setQuery}
         />
@@ -74,12 +59,7 @@ function AllHeroes () {
             <HeroesList
               heroArray={sortedHeroesArray
                 .filter(
-                  el => el.name.toLowerCase().includes(query.toLowerCase()) &&
-                  isMatchWith(
-                    el.powerstats,
-                    stats,
-                    (objVal, srcVal) => +objVal >= srcVal
-                  )
+                  el => el.name.toLowerCase().includes(query.toLowerCase())
                 )}
               onHeroClick={heroClick}
             />

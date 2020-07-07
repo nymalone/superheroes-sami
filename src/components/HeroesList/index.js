@@ -1,26 +1,31 @@
+/* eslint-disable react/jsx-key */
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import './styles.scss'
+import { CardColumns, Card } from 'react-bootstrap'
 
 const HeroesList = ({
   heroArray = [],
   onHeroClick
 }) => {
   return (
-    <div className='hero-list-container'>
-      <ul className='hero-list'>
-        {heroArray.map(el => (
-          <li
+    <>
+      <CardColumns >
+        {heroArray.map((el) => (
+          <Card
             key={el.id}
             onClick={() => onHeroClick(el)}
-            className='hero-li'
+            style={{ marginBottom: 20, width: 300, height: 460 }}
           >
-            {el.name}
-          </li>
+            <Card.Img variant="top" src={el.image.url} alt={el.name} style={{ height: 400, width: 300 }}/>
+            <Card.Body>
+              <Card.Title>{el.name}</Card.Title>
+            </Card.Body>
+          </Card>
         ))}
-      </ul>
-    </div>
+      </CardColumns>
+    </>
   )
 }
 

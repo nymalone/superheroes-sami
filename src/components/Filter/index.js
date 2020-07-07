@@ -43,8 +43,6 @@ Filter.propTypes = {
     speed: PropTypes.number,
     strength: PropTypes.number
   }),
-  setFilterStats: PropTypes.func.isRequired,
-  resetFilterStats: PropTypes.func.isRequired,
   query: PropTypes.string,
   setQuery: PropTypes.func
 }
