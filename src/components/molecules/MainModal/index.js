@@ -16,7 +16,6 @@ const MainModal = ({
         <Button
           text='X'
           onClick={() => closeModal(null)}
-          className='modal-close-button'
         />
       </div>
       <div className='modal-content'>
