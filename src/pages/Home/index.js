@@ -14,7 +14,7 @@ export default class Home extends Component {
           </header>
 
           <main>
-            <h1>Your platform to search for your favorite heroe!</h1>
+            <h1>Your platform to search for your favorite hero!</h1>
             <p>We help people find heroes efficiently</p>
             <Link to="/all-heroes">
               <span>

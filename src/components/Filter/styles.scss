@@ -33,3 +33,9 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+  .filterbar-title {
+    font-size: 24px !important;
+  }
+}
