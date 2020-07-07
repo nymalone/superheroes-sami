@@ -14,5 +14,9 @@
     width: 300px;
     max-width: 80%;
     height: 100%;
+
+    .modal-hero-stat-name {
+      text-transform: capitalize;
+    }
   }
 }
